@@ -79,6 +79,11 @@ button {
   font-size: 1rem;
 }
 
+button:hover {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+}
+
 .section2 {
   display: flex;
   flex-direction: column; /* Stack header and content vertically */
@@ -133,8 +138,8 @@ button {
   max-width: 300px; /* all images max same width */
   aspect-ratio: 4/3; /* keeps them same height/shape */
   border-radius: 10px;
-  -o-object-fit: cover;
-     object-fit: cover; /* crop instead of stretch */
+  -o-object-fit: fill;
+     object-fit: fill; /* crop instead of stretch */
 }
 
 footer {
