@@ -1,0 +1,79 @@
+:root {
+    --primary-color: #2991a9;
+    --secondary-color: #0628d1;
+    --background-color: #333;
+    --text-color: #ffffff;
+    --accent-color: #0062ff;
+    --font-family: 'Arial, sans-serif';
+}
+
+.nav-main {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--background-color);
+    border: 2px solid var(--accent-color);
+    border-radius: 20px;
+}
+
+.nav-main ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-main ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-main ul li a:hover {
+    background-color: #575757;
+}
+
+.footer-main {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 1rem;
+    border: 2px solid var(--accent-color);
+    border-radius: 20px;
+    margin-top: 2rem;
+}
+
+/* CARDS START */
+
+/* iPhone */
+@media (min-width: 600px) {
+    .section1 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Tablet */
+@media (min-width: 1024px) {
+    .section1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop */
+@media (min-width: 1300px) {
+    .section1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1600px) {
+    .section1 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* CARDS END */
