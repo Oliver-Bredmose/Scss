@@ -1,18 +1,22 @@
 :root {
-    --primary-color: #2991a9;
-    --secondary-color: #0628d1;
-    --background-color: #333;
+    --primary-color: #333;
+    --cta-color: #d10606;
     --text-color: #ffffff;
-    --accent-color: #0062ff;
+    --accent-color: #0008ff;
     --font-family: 'Arial, sans-serif';
+    border-radius: 20px;
 }
 
+
+    //NAVIGATION BAR 
 .nav-main {
     display: flex;
     justify-content: space-between;
-    background-color: var(--background-color);
-    border: 2px solid var(--accent-color);
+    background-color: #333;
+    color: white;
+    padding: 10px;
     border-radius: 20px;
+    border-color: 2px var(--accent-color);
 }
 
 .nav-main ul {
@@ -22,6 +26,7 @@
     padding: 0;
 }
 
+
 .nav-main ul li a {
     display: block;
     padding: 0.5rem 1rem;
@@ -30,50 +35,122 @@
 }
 
 .nav-main ul li a:hover {
-    background-color: #575757;
+    background-color: #555;
 }
+    //END NAVIGATION BAR
 
-.footer-main {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    text-align: center;
-    padding: 1rem;
-    border: 2px solid var(--accent-color);
-    border-radius: 20px;
-    margin-top: 2rem;
-}
-
-/* CARDS START */
-
-/* iPhone */
-@media (min-width: 600px) {
     .section1 {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column; /* Stack header and content vertically */
+        margin: 20px;
+        padding: 20px;
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        border-radius: 20px;
     }
-}
-
-/* Tablet */
-@media (min-width: 1024px) {
-    .section1 {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+    
+    .section1 h1 {
+        margin-bottom: 20px; /* Add spacing below the header */
+        text-align: center; /* Center-align the header */
     }
-}
-
-/* Desktop */
-@media (min-width: 1300px) {
-    .section1 {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+    
+    .section1-content {
+        display: flex;
+        justify-content: space-between; /* Space between text and button */
+        align-items: center; /* Align items vertically */
     }
-}
-
-@media (min-width: 1600px) {
-    .section1 {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+    
+    .section1-content p {
+        text-align: left; /* Align text to the left */
+        margin: 0; /* Remove default margin */
+        flex: 1; /* Allow the text to take up available space */
+        line-height: 1.2; /* Reduce line height for more compressed text */
+        font-size: 0.9rem; /* Optionally reduce font size */
+        padding-right: 10px; /* Add padding to push the button further right */
     }
-}
+    
+    .section1-content{
+        margin-left: 20px; /* Add spacing between text and button */
+    }
 
-/* CARDS END */
+    button {
+        background-color: var(--cta-color);
+        color: var(--text-color);
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+
+
+    .section2 {
+        display: flex;
+        flex-direction: column; /* Stack header and content vertically */
+        margin: 20px;
+        padding: 20px;
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        border-radius: 20px;
+    }
+    
+    .section2 h1 {
+        margin-bottom: 20px; /* Add spacing below the header */
+        text-align: center; /* Center-align the header */
+    }
+    
+    .section2-content {
+        display: flex;
+        justify-content: space-between; /* Space between text and button */
+        align-items: center; /* Align items vertically */
+    }
+    
+    .section2-content p {
+        text-align: left; /* Align text to the left */
+        margin: 0; /* Remove default margin */
+        flex: 1; /* Allow the text to take up available space */
+        line-height: 1.2; /* Reduce line height for more compressed text */
+        font-size: 0.9rem; /* Optionally reduce font size */
+        padding-right: 10px; /* Add padding to push the button further right */
+    }
+    
+    .section3 {
+        display: flex;
+        flex-direction: column; /* stack heading above images */
+        margin: 20px;
+        padding: 20px;
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        border-radius: 20px;
+        text-align: center;
+      }
+      
+      .section3 .images {
+        display: flex;
+        flex-wrap: wrap;       /* allow wrapping on smaller screens */
+        justify-content: center;
+        gap: 15px;             /* spacing between images */
+        margin-top: 15px;
+      }
+      
+      .section3 .images img {
+        flex: 1 1 300px;       /* each image minimum 300px wide */
+        max-width: 300px;      /* all images max same width */
+        aspect-ratio: 4 / 3;   /* keeps them same height/shape */
+        border-radius: 10px;
+        object-fit: cover;     /* crop instead of stretch */
+      }
+      
+
+    footer {
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        text-align: center;
+        padding: 5px;
+        margin: 20px;
+        margin-right: 20px;
+        border-radius: 20px;
+    }
+
+
+
