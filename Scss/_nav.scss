@@ -1,0 +1,33 @@
+/* =====================================
+   NAVIGATION BAR
+===================================== */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    border-color: 2px var(--accent-color);
+    ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li a {
+            display: block;
+            padding: 0.5rem 1rem;
+            color: white;
+            text-decoration: none;
+
+        }
+    }
+    a:hover {
+        background-color: #555;
+    }
+    
+}
+
+
+
+
